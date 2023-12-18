@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/index.css">
+    <script href="resources/index.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Registration Form</title>
+</head>
+
+<body class="gradient-custom-3">
+    <section class="vh-100 bg-image main-container">
+        <div class="mask d-flex align-items-center h-100 gradient-custom-3 main-form">
+            <div class="container h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-md-10">
+                        <div class="card" style="border-radius: 15px;">
+                            <div class="card-body p-5 mt-10">
+                                <h2 class="text-uppercase text-center mb-5">Student Enrollment Form</h2>
+                                <form id="studentForm" method="post">
+                                    <div class="form-outline mb-4 row">
+                                        <div class="col-md-6">
+                                            <input type="text" name="rollNo" id="rollNo"
+                                                class="form-control form-control-lg" required />
+                                            <label class="form-label" for="form3Example1cg">Roll-No</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" name="fullName" id="fullName"
+                                                class="form-control form-control-lg" required />
+                                            <label class="form-label" for="form3Example1cg">Full-Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-outline mb-4 row">
+                                        <div class="col-md-6">
+                                            <input type="text" name="division" id="division"
+                                                class="form-control form-control-lg" required />
+                                            <label class="form-label" for="form3Example1cg">Class</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" name="birthDate" id="birthDate"
+                                                class="form-control form-control-lg" pattern="\d{2}/\d{2}/\d{4}" required />
+                                            <label class="form-label" for="form3Example1cg">Birth-Date (dd/mm/yyyy)</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-outline mb-4 row">
+                                        <div class="col-md-6">
+                                            <input type="text" name="address" id="address"
+                                                class="form-control form-control-lg" required />
+                                            <label class="form-label" for="form3Example1cg">Address</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" name="enroll" id="enroll"
+                                                class="form-control form-control-lg" pattern="\d{2}/\d{2}/\d{4}" required />
+                                            <label class="form-label" for="form3Example1cg">Enrollment-Date (dd/mm/yyyy)</label>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-md-4">
+                                            <button type="button"
+                                                class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                                                id="studentSave" value="Save" onclick="saveStudent();">Register</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
